@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
 import Post from "../Image/author.json";
+import { BaseUrl } from "../URL/BaseUrl";
 
 class Journal extends Component {
   render() {
@@ -19,7 +21,7 @@ class Journal extends Component {
             <Row key={i}>
               <Col xl={2}>
                 <div className="pp-author flex-content">
-                  <img src={jornal.img} alt="author" />
+                  <img src={`${BaseUrl}/${jornal.img}`} alt="author" />
                 </div>
               </Col>
               <Col xl={8}>

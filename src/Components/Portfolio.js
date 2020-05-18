@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import Img from "../Image/portfolio/portofolio.json";
+import { BaseUrl } from "../URL/BaseUrl";
+
 class Portfolio extends Component {
   render() {
     return (
@@ -21,7 +23,7 @@ class Portfolio extends Component {
             <div className="portfolio-img flex-wrap">
               {Img.map((img, i) => (
                 <div>
-                  <img key={i} src={`${img.url}`} alt="portofolio" />
+                  <img key={i} src={`${BaseUrl}/${img.url}`} alt="portofolio" />
                   <p>Comic Sneakers</p>
                 </div>
               ))}

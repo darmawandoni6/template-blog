@@ -1,17 +1,17 @@
 [{
-    "photo": "http://localhost:3000/team/team-img-01.jpg",
+    "photo": "team/team-img-01.jpg",
     "name": "Naruto Uzumaki",
     "jabatan": "Directur"
 }, {
-    "photo": "http://localhost:3000/team/team-img-02.jpg",
+    "photo": "team/team-img-02.jpg",
     "name": "Naruto Uzumaki",
     "jabatan": "Directur"
 }, {
-    "photo": "http://localhost:3000/team/team-img-03.jpg",
+    "photo": "team/team-img-03.jpg",
     "name": "Naruto Uzumaki",
     "jabatan": "Senior Web Designer"
 }, {
-    "photo": "http://localhost:3000/team/team-img-03.jpg",
+    "photo": "team/team-img-03.jpg",
     "name": "Naruto Uzumaki",
     "jabatan": "Web Designer"
 }]

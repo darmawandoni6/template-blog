@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Team from "../Image/team.json";
 import Testimony from "../Image/client.json";
+import { BaseUrl } from "../URL/BaseUrl";
 
 class AboutUs extends Component {
   render() {
@@ -166,7 +167,7 @@ class AboutUs extends Component {
             {Team.map((team, i) => (
               <Col xl={3} key={i}>
                 <div className="about-team">
-                  <img src={team.photo} alt="team" />
+                  <img src={`${BaseUrl}/${team.photo}`} alt="team" />
                   <h5
                     style={{
                       color: "#0f9095",
@@ -228,7 +229,7 @@ class AboutUs extends Component {
             {Testimony.map((client, i) => (
               <Col xl={6} key={i}>
                 <div className="Testimoni-client">
-                  <img src={client.img} alt="pp client" />
+                  <img src={`${BaseUrl}/${client.img}`} alt="pp client" />
                   <div>
                     <p>
                       <spam
