@@ -165,28 +165,11 @@ class AboutUs extends Component {
           </Row>
           <Row style={{ marginBottom: 50 }}>
             {Team.map((team, i) => (
-              <Col xl={3} key={i}>
+              <Col xl={3} lg={4} md={6} sm={6} xs={6} key={i}>
                 <div className="about-team">
                   <img src={`${BaseUrl}/${team.photo}`} alt="team" />
-                  <h5
-                    style={{
-                      color: "#0f9095",
-                      fontSize: 15,
-                      paddingTop: 5,
-                    }}
-                  >
-                    {team.name}
-                  </h5>
-                  <p
-                    style={{
-                      color: "#969696",
-                      fontSize: 13,
-                      paddingTop: 5,
-                      marginBottom: 5,
-                    }}
-                  >
-                    {team.jabatan}
-                  </p>
+                  <h5>{team.name}</h5>
+                  <p>{team.jabatan}</p>
                   <div className="icon-sosmed">
                     <img
                       src={require("../Image/icon-sosmed/facebook-f-brands.svg")}

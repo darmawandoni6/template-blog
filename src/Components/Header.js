@@ -1,8 +1,27 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: false,
+      matches: window.matchMedia("(min-width: 800px)").matches,
+    };
+  }
+  componentDidMount() {
+    const handler = (e) =>
+      this.setState({ matches: e.matches, checked: false });
+    window.matchMedia("(min-width: 800px)").addListener(handler);
+  }
+  show = () => {
+    this.setState({
+      checked: !this.state.checked,
+    });
+  };
   render() {
     return (
       <div className="header">
@@ -18,7 +37,7 @@ class Header extends Component {
             >
               <img src={require("../Image/logo.png")} alt="logo" />
             </Link>
-            <div className="menu">
+            <div className={this.state.checked ? "show-menu" : "menu"}>
               <Link
                 activeClass="active"
                 to="Home"
@@ -85,6 +104,20 @@ class Header extends Component {
               >
                 <div>Contact</div>
               </Link>
+            </div>
+            <div
+              className="icon-bars"
+              onClick={() => {
+                this.show();
+              }}
+            >
+              <FontAwesomeIcon icon={faBars} />
+              <input
+                type="checkbox"
+                name="menu"
+                checked={this.state.checked}
+                style={{ display: "none" }}
+              />
             </div>
           </div>
         </Container>

@@ -51,6 +51,7 @@
   display: flex;
   justify-content: flex-start;
   height: 54px;
+  position: relative;
 }
 
 .navigation img {
@@ -217,6 +218,19 @@
   height: 250px;
 }
 
+.about-team h5 {
+  color: #0f9095;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.about-team p {
+  color: #969696;
+  font-size: 13px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
 .icon-sosmed {
   display: flex;
   padding-top: 5px;
@@ -298,4 +312,204 @@ footer {
   display: flex;
   justify-content: space-between;
   color: #303030;
+}
+
+.icon-bars {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-team {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .slidder {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slidder h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .slidder p {
+    font-size: 18px;
+    line-height: 20px;
+    opacity: 0.5;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .pp-author img {
+    display: none;
+  }
+
+  .about-team {
+    margin-bottom: 20px;
+  }
+
+  .about-team img {
+    width: 95%;
+    height: 250px;
+  }
+
+  .icon-sosmed {
+    display: flex;
+    padding-top: 5px;
+  }
+
+  .icon-sosmed img {
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu div {
+    display: none;
+  }
+
+  .icon-bars {
+    display: block !important;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 36px;
+    text-align: center;
+    min-width: 60px;
+    cursor: pointer;
+  }
+
+  .icon-bars:hover {
+    background-color: #11abb0;
+  }
+
+  .slidder {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slidder h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .slidder p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .portfolio-img div {
+    width: 30%;
+    height: 200px;
+  }
+
+  .portfolio-img div img {
+    height: 160px;
+  }
+
+  .pp-author img {
+    display: none;
+  }
+
+  .about-team {
+    margin-bottom: 20px;
+  }
+
+  .about-team img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .icon-sosmed {
+    display: flex;
+    padding-top: 5px;
+  }
+
+  .icon-sosmed img {
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+
+  .slidder {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slidder h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .slidder p {
+    font-size: 10px;
+    line-height: 12px;
+    opacity: 0.5;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .portfolio-img div {
+    width: 48%;
+  }
+
+  .pp-author img {
+    display: none;
+  }
+
+  .about-team {
+    margin-bottom: 20px;
+  }
+
+  .icon-sosmed {
+    display: flex;
+    padding-top: 5px;
+  }
+
+  .icon-sosmed img {
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+  }
+}
+
+
+
+.show-menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  background-color: black;
+  height: 54px;
+  width: 100%;
+  bottom: -54px;
+}
+
+.show-menu div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.show-menu div:hover {
+  cursor: pointer;
+  background-color: #11abb0;
 }

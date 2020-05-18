@@ -24,7 +24,7 @@ class Portfolio extends Component {
               {Img.map((img, i) => (
                 <div key={i}>
                   <img src={`${BaseUrl}/${img.url}`} alt="portofolio" />
-                  <p>Comic Sneakers</p>
+                  <p>{img.name}</p>
                 </div>
               ))}
             </div>

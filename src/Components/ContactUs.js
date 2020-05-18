@@ -11,13 +11,13 @@ class ContactUs extends Component {
               <h2
                 style={{ fontSize: 30, color: "#11ABB0", fontWeight: "bold" }}
               >
-                Service
+                Contact Us
               </h2>
-              <p style={{ fontSize: 14 }}>Our list of awesome services.</p>
+              <p style={{ fontSize: 14 }}>Get in touch with us.</p>
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col xl={6} lg={8} md={12} sm={12} xs={12}>
               <Form>
                 <Form.Group as={Row}>
                   <Form.Label column sm="2" style={{ color: "white" }}>
@@ -60,7 +60,7 @@ class ContactUs extends Component {
                 </Form.Group>
               </Form>
             </Col>
-            <Col>
+            <Col xl={6} lg={4} md={12} sm={12} xs={12}>
               <div className="contact-info">
                 <h3>Contact Information</h3>
                 <p>

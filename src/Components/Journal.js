@@ -19,12 +19,12 @@ class Journal extends Component {
           </Row>
           {Post.map((jornal, i) => (
             <Row key={i}>
-              <Col xl={2}>
+              <Col xl={2} lg={2} md={0} sm={0} xs={0}>
                 <div className="pp-author flex-content">
                   <img src={`${BaseUrl}/${jornal.img}`} alt="author" />
                 </div>
               </Col>
-              <Col xl={8}>
+              <Col xl={8} lg={8} md={8} sm={8} xs={8}>
                 <h3 className="jornal-title">{jornal.title}</h3>
                 <p style={{ color: "#7fe6ed" }}>
                   {jornal.body}
@@ -34,7 +34,7 @@ class Journal extends Component {
                   </span>
                 </p>
               </Col>
-              <Col xl={2}>
+              <Col xl={2} lg={2} md={4} sm={4} xs={4}>
                 <p>
                   {jornal.created}
                   <br />
