@@ -22,8 +22,8 @@ class Portfolio extends Component {
           <div className="portfolio ">
             <div className="portfolio-img flex-wrap">
               {Img.map((img, i) => (
-                <div>
-                  <img key={i} src={`${BaseUrl}/${img.url}`} alt="portofolio" />
+                <div key={i}>
+                  <img src={`${BaseUrl}/${img.url}`} alt="portofolio" />
                   <p>Comic Sneakers</p>
                 </div>
               ))}

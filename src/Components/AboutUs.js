@@ -232,7 +232,7 @@ class AboutUs extends Component {
                   <img src={`${BaseUrl}/${client.img}`} alt="pp client" />
                   <div>
                     <p>
-                      <spam
+                      <span
                         style={{
                           fontSize: 14,
                           color: "#0f9095",
@@ -240,7 +240,7 @@ class AboutUs extends Component {
                         }}
                       >
                         {client.name}
-                      </spam>{" "}
+                      </span>
                       <br />
                       <span
                         style={{

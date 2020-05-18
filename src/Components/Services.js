@@ -13,8 +13,8 @@ import {
 class Services extends Component {
   render() {
     return (
-      <div className="services-bg" id="Services">
-        <Container>
+      <div className="services-bg">
+        <Container id="Services">
           <Row style={{ marginBottom: 10 }}>
             <Col xl="4" className="services">
               <h2

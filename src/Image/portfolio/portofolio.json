@@ -1,25 +1,25 @@
 [{
-    "url": "http://localhost:3000/portofolio/cosmic-sneakers.jpg",
+    "url": "portofolio/cosmic-sneakers.jpg",
     "name": "Cosmic Sneakers"
 }, {
-    "url": "http://localhost:3000/portofolio/milk-splash.jpg",
+    "url": "portofolio/milk-splash.jpg",
     "name": "Milk Splash"
 }, {
-    "url": "http://localhost:3000/portofolio/Eve.jpg",
+    "url": "portofolio/Eve.jpg",
     "name": "Eve"
 }, {
-    "url": "http://localhost:3000/portofolio/sneaker-splash.jpg",
+    "url": "portofolio/sneaker-splash.jpg",
     "name": "Sneaker Splash"
 }, {
-    "url": "http://localhost:3000/portofolio/judah.jpg",
+    "url": "portofolio/judah.jpg",
     "name": "Judah"
 }, {
-    "url": "http://localhost:3000/portofolio/vector-flower.jpg",
+    "url": "portofolio/vector-flower.jpg",
     "name": "Vector Flower"
 }, {
-    "url": "http://localhost:3000/portofolio/clock.jpg",
+    "url": "portofolio/clock.jpg",
     "name": "Clock"
 }, {
-    "url": "http://localhost:3000/portofolio/fields.jpg",
+    "url": "portofolio/fields.jpg",
     "name": "Fields"
 }]
