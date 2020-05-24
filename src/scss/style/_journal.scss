@@ -1,0 +1,51 @@
+.journal-bg {
+    background-color: $biru-tua;
+    padding-top: $padding-top;
+    padding-bottom: $padding-top;
+
+    color: white;
+    font-family: "opensans-regular";
+
+    div {
+        div {
+            div {
+                h2 {
+                    font-family: "montserrat-bold";
+                }
+            }
+
+            .pp-author {
+                text-align: center;
+
+                img {
+                    border-radius: 50%;
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+
+            .jornal-title {
+                font-family: "montserrat-regular";
+                font-size: 30px;
+
+                &:hover {
+                    color: #005757;
+                    cursor: pointer;
+                }
+            }
+
+            p {
+                color: #7fe6ed;
+
+                span {
+                    color: white;
+
+                    &:hover {
+                        color: #005757;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

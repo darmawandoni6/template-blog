@@ -9,25 +9,13 @@ class AboutUs extends Component {
     return (
       <div className="grey-bg" id="AboutUs">
         <Container>
-          <Row style={{ marginBottom: 50 }}>
+          <Row className="row-1">
             <Col xl={3}>
-              <h2
-                style={{ fontSize: 30, color: "#11ABB0", fontWeight: "bold" }}
-              >
-                About Us
-              </h2>
-              <p style={{ fontSize: 14, color: "#999999" }}>
-                This is what we are.
-              </p>
+              <h2>About Us</h2>
+              <p>This is what we are.</p>
             </Col>
             <Col>
-              <p
-                style={{
-                  fontSize: 20,
-                  color: "#A3A3A3",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
+              <p>
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
@@ -37,37 +25,13 @@ class AboutUs extends Component {
               </p>
             </Col>
           </Row>
-          <Row style={{ marginBottom: 24 }}>
-            <h3
-              style={{
-                fontSize: 24,
-                fontWeight: "bold",
-                color: "#6E6E6E",
-                fontFamily: "Open Sans, sans-serif",
-              }}
-            >
-              Our Work Process.
-            </h3>
+          <Row className="row-2">
+            <h3>Our Work Process.</h3>
           </Row>
-          <Row style={{ marginBottom: 24 }}>
+          <Row className="row-3">
             <Col xl={3}>
-              <h4
-                style={{
-                  fontSize: 15,
-                  fontWeight: "bold",
-                  color: "#0f9095",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
-                EXPLORE.
-              </h4>
-              <p
-                style={{
-                  fontSize: 15,
-                  color: "#A3A3A3",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
+              <h4>EXPLORE.</h4>
+              <p>
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
@@ -76,23 +40,8 @@ class AboutUs extends Component {
               </p>
             </Col>
             <Col xl={3}>
-              <h4
-                style={{
-                  fontSize: 15,
-                  fontWeight: "bold",
-                  color: "#0f9095",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
-                DESIGN.
-              </h4>
-              <p
-                style={{
-                  fontSize: 15,
-                  color: "#A3A3A3",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
+              <h4>DESIGN.</h4>
+              <p>
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
@@ -101,23 +50,8 @@ class AboutUs extends Component {
               </p>
             </Col>
             <Col xl={3}>
-              <h4
-                style={{
-                  fontSize: 15,
-                  fontWeight: "bold",
-                  color: "#0f9095",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
-                DEVELOP.
-              </h4>
-              <p
-                style={{
-                  fontSize: 15,
-                  color: "#A3A3A3",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
+              <h4>DEVELOP.</h4>
+              <p>
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
@@ -126,23 +60,8 @@ class AboutUs extends Component {
               </p>
             </Col>
             <Col xl={3}>
-              <h4
-                style={{
-                  fontSize: 15,
-                  fontWeight: "bold",
-                  color: "#0f9095",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
-                DELIVER.
-              </h4>
-              <p
-                style={{
-                  fontSize: 15,
-                  color: "#A3A3A3",
-                  fontFamily: "Open Sans, sans-serif",
-                }}
-              >
+              <h4>DELIVER.</h4>
+              <p>
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
@@ -151,19 +70,10 @@ class AboutUs extends Component {
               </p>
             </Col>
           </Row>
-          <Row style={{ marginBottom: 10 }}>
-            <h3
-              style={{
-                fontSize: 24,
-                fontWeight: "bold",
-                color: "#6E6E6E",
-                fontFamily: "Open Sans, sans-serif",
-              }}
-            >
-              Meet The Team.
-            </h3>
+          <Row className="row-2">
+            <h3>Meet The Team.</h3>
           </Row>
-          <Row style={{ marginBottom: 50 }}>
+          <Row className="row-4">
             {Team.map((team, i) => (
               <Col xl={3} lg={4} md={6} sm={6} xs={6} key={i}>
                 <div className="about-team">
@@ -196,55 +106,26 @@ class AboutUs extends Component {
               </Col>
             ))}
           </Row>
-          <Row style={{ marginBottom: 20 }}>
+          <Row className="row-5">
             <Col>
-              <h2
-                style={{ fontSize: 30, color: "#11ABB0", fontWeight: "bold" }}
-              >
-                Testimonials
-              </h2>
-              <p style={{ fontSize: 14, color: "#999999" }}>
-                What our clients are saying.
-              </p>
+              <h2>Testimonials</h2>
+              <p>What our clients are saying.</p>
             </Col>
           </Row>
-          <Row style={{ marginBottom: 50 }}>
+          <Row className="row-6">
             {Testimony.map((client, i) => (
               <Col xl={6} key={i}>
                 <div className="Testimoni-client">
                   <img src={`${BaseUrl}/${client.img}`} alt="pp client" />
                   <div>
                     <p>
-                      <span
-                        style={{
-                          fontSize: 14,
-                          color: "#0f9095",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        {client.name}
-                      </span>
+                      <span>{client.name}</span>
                       <br />
-                      <span
-                        style={{
-                          fontSize: 13,
-                          color: "#838C95",
-                        }}
-                      >
-                        {client.job}
-                      </span>
+                      <span>{client.job}</span>
                     </p>
                   </div>
                 </div>
-                <div
-                  style={{
-                    padding: 10,
-                    color: "#838C95",
-                    fontSize: 18,
-                  }}
-                >
-                  {client.body}
-                </div>
+                <div>{client.body}</div>
               </Col>
             ))}
           </Row>

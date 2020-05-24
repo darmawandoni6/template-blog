@@ -1,0 +1,39 @@
+$height: 85vh;
+
+.home-bg {
+    max-width: 100vw;
+    height: $height;
+    background: url("../../Image/intro-bg.jpg");
+    background-size: cover;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    div {
+
+        .slidder {
+            height: $height - 10vh;
+            @include flex-all-center;
+            flex-direction: column;
+            padding-left: 200px;
+            padding-right: 200px;
+
+            div {
+                margin: 100px;
+
+                h2 {
+                    color: white;
+                    font-size: 54px;
+                    text-align: center;
+                    font-family: "montserrat-bold";
+                }
+
+                p {
+                    color: #73738c;
+                    font-family: "opensans-light",
+                        "sans-serif";
+                }
+            }
+        }
+    }
+}

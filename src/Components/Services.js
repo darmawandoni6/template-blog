@@ -25,7 +25,7 @@ class Services extends Component {
               <p style={{ fontSize: 14 }}>Our list of awesome services.</p>
             </Col>
             <Col className="services ">
-              <p style={{ fontSize: 20 }}>
+              <p style={{ fontSize: 20, fontFamily: "opensans-light" }}>
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas molestias excepturi sint occaecati cupiditate.

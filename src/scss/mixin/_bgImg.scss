@@ -1,0 +1,9 @@
+@mixin bg-dark {
+    background-image: url("../../Image/Patern/servicesbg.png");
+    background-repeat: repeat;
+}
+
+@mixin bg-grey {
+    background-image: url("../../Image/Patern/grey.png");
+    background-repeat: repeat;
+}

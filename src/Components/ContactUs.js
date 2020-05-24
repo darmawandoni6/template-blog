@@ -4,60 +4,49 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 class ContactUs extends Component {
   render() {
     return (
-      <div className="services-bg" id="Contact">
+      <div className="contact-bg" id="Contact">
         <Container>
-          <Row style={{ marginBottom: 10 }}>
+          <Row>
             <Col xl="4" className="services ">
-              <h2
-                style={{ fontSize: 30, color: "#11ABB0", fontWeight: "bold" }}
-              >
-                Contact Us
-              </h2>
-              <p style={{ fontSize: 14 }}>Get in touch with us.</p>
+              <h2>Contact Us</h2>
+              <p>Get in touch with us.</p>
             </Col>
           </Row>
-          <Row>
+          <Row className="form-services">
             <Col xl={6} lg={8} md={12} sm={12} xs={12}>
               <Form>
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2" style={{ color: "white" }}>
-                    Nama<span style={{ color: "#11ABB0" }}>*</span>
-                  </Form.Label>
-                  <Col sm="10" className="about-input">
+                <Row>
+                  <Col xl={3} lg={8} md={12} sm={12} xs={12}>
+                    Name &nbsp;<span>*</span>
+                  </Col>
+                  <Col>
                     <input type="text" />
                   </Col>
-                </Form.Group>
-
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2" style={{ color: "white" }}>
-                    Email<span style={{ color: "#11ABB0" }}>*</span>
-                  </Form.Label>
-                  <Col sm="10" className="about-input">
+                </Row>
+                <Row>
+                  <Col xl={3} lg={8} md={12} sm={12} xs={12}>
+                    Email &nbsp;<span>*</span>
+                  </Col>
+                  <Col>
                     <input type="text" />
                   </Col>
-                </Form.Group>
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2" style={{ color: "white" }}>
-                    SubJect<span style={{ color: "#11ABB0" }}>*</span>
-                  </Form.Label>
-                  <Col sm="10" className="about-input">
+                </Row>
+                <Row>
+                  <Col xl={3} lg={8} md={12} sm={12} xs={12}>
+                    Subject &nbsp;<span>*</span>
+                  </Col>
+                  <Col>
                     <input type="text" />
                   </Col>
-                </Form.Group>
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2" style={{ color: "white" }}>
-                    SubJect<span style={{ color: "#11ABB0" }}>*</span>
-                  </Form.Label>
-                  <Col sm="10" className="about-input">
-                    <textarea rows="10" />
+                </Row>
+                <Row>
+                  <Col xl={3} lg={8} md={12} sm={12} xs={12}>
+                    Message &nbsp;<span>*</span>
                   </Col>
-                </Form.Group>
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2" />
-                  <Col sm="2" className="about-input">
-                    <button>Submit</button>
+                  <Col>
+                    <textarea rows="8" />
                   </Col>
-                </Form.Group>
+                </Row>
               </Form>
             </Col>
             <Col xl={6} lg={4} md={12} sm={12} xs={12}>

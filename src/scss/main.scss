@@ -1,0 +1,19 @@
+@import "mixin/flex";
+@import "variable/color";
+@import "font/font";
+@import "variable/paddingComponent";
+@import "mixin/bgImg";
+
+@import "style/header";
+@import "style/home";
+@import "style/services";
+@import "style/portofolio";
+@import "style/journal";
+@import "style/aboutUs";
+@import "style/contactUs";
+@import "style/foter";
+
+
+.active {
+    background-color: $biru-muda;
+}

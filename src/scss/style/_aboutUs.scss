@@ -1,0 +1,139 @@
+.grey-bg {
+    @include bg-grey;
+    padding-top: $padding-top;
+
+    div {
+        div {
+            margin-bottom: 10px;
+            color: $abu2;
+        }
+
+        .row-1 {
+            div {
+
+                h2 {
+                    color: $biru-muda;
+                    font-family: "montserrat-bold";
+                }
+
+                p {
+                    color: $abu2-2;
+                    font-family: "opensans-regular";
+                }
+            }
+        }
+
+        .row-2 {
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                font-family: "montserrat-regular";
+                margin-top: 24px;
+                margin-bottom: 24px;
+                color: #6E6E6E;
+            }
+        }
+
+        .row-3 {
+            div {
+                h4 {
+                    color: $biru-muda;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-family: "montserrat-bold";
+                }
+
+                p {
+                    margin: 0 0 24px 0;
+                    font-family: "opensans-regular";
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: $abu2-2;
+                }
+            }
+        }
+
+        .row-4 {
+            .about-team {
+
+                img {
+                    width: 100%;
+                    height: 250px;
+                }
+
+                h5,
+                p {
+                    padding-left: 10px;
+                }
+
+                h5 {
+                    color: $biru-muda;
+                    font-family: "montserrat-bold";
+                    font-size: 14px;
+                    padding-top: 5px;
+                }
+
+                p {
+                    color: $abu2-2;
+                    font-family: "opensans-regular";
+                    font-size: 13px;
+                }
+
+                .icon-sosmed {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin: 3px;
+                    }
+                }
+            }
+        }
+
+        .row-5 {
+            div {
+                color: $abu2-2;
+
+                h2 {
+                    color: $biru-muda;
+                }
+            }
+        }
+
+        .row-6 {
+            div {
+                .Testimoni-client {
+                    @include flex-wrap;
+
+                    img {
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+
+                    div {
+
+
+                        p {
+                            color: $abu2-2;
+
+                            span {
+                                padding-top: 5px;
+                                font-size: 13px;
+
+                                &:first-child {
+                                    font-style: 18px;
+                                    color: $biru-muda;
+                                    font-family: "montserrat-bold";
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div {
+                    color: $abu2-2;
+                    font-family: "opensans-regular";
+                }
+            }
+        }
+    }
+}

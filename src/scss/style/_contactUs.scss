@@ -1,0 +1,79 @@
+.contact-bg {
+    @include bg-dark;
+    padding-top: $padding-top;
+    padding-bottom: $padding-top;
+
+    div {
+        div {
+            .services {
+                h2 {
+                    color: $biru-muda;
+                    font-family: "montserrat-bold";
+                }
+
+                p {
+                    color: $abu2;
+                    font-family: "opensans-regular";
+                }
+            }
+
+
+        }
+
+        .form-services {
+            div {
+                form {
+                    div {
+                        margin-bottom: 10px;
+
+                        div {
+                            color: white !important;
+
+                            span {
+                                color: $biru-muda;
+                            }
+                        }
+
+                        input {
+                            width: 90%;
+                            height: 60px;
+                            background: #3F464B;
+                            border: none;
+                            outline: none;
+                            padding-left: 10px;
+                            caret-color: white;
+                            color: white;
+
+                            &:focus {
+                                background-color: $biru-tua;
+                            }
+                        }
+
+                        textarea {
+                            width: 90%;
+                            background: #3F464B;
+                            border: none;
+                            outline: none;
+                            padding-left: 10px;
+                            caret-color: white;
+                            color: white;
+                            padding-top: 5px;
+
+                            &:focus {
+                                background-color: $biru-tua;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-info {
+            color: $abu2;
+
+            h3 {
+                color: $biru-muda;
+            }
+        }
+    }
+}

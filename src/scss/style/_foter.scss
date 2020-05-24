@@ -1,0 +1,19 @@
+footer {
+    background-color: black;
+    padding: 5px;
+
+    div {
+        .footer {
+            @include flext-beetween;
+
+            .icon-sosmed {
+                img {
+                    width: 14px;
+                    height: 14px;
+                    margin: 5px;
+                }
+
+            }
+        }
+    }
+}

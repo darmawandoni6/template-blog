@@ -1,0 +1,26 @@
+.services-bg {
+    @include bg-dark;
+
+    padding-top: $padding-top;
+    padding-bottom: $padding-top;
+
+    div {
+
+        div {
+            .services {
+                color: $abu2;
+
+                h2 {
+                    font-family: 'montserrat-bold';
+                }
+
+                p {
+                    font-family: 'opensans-regular';
+
+                }
+
+            }
+        }
+
+    }
+}

@@ -8,7 +8,7 @@ import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 
-import "./App.css";
+import "./scss/main.scss";
 class App extends Component {
   render() {
     return (
